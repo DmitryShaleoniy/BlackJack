@@ -35,14 +35,14 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="card_button">
             <property name="text">
              <string>Взять карту</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_2">
+           <widget class="QPushButton" name="play_button">
             <property name="text">
              <string>Играть</string>
             </property>

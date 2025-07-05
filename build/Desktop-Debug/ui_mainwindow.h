@@ -35,8 +35,8 @@ public:
     QListWidget *player;
     QVBoxLayout *verticalLayout;
     QLabel *bet;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
+    QPushButton *card_button;
+    QPushButton *play_button;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -70,15 +70,15 @@ public:
 
         verticalLayout->addWidget(bet);
 
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
+        card_button = new QPushButton(centralwidget);
+        card_button->setObjectName("card_button");
 
-        verticalLayout->addWidget(pushButton);
+        verticalLayout->addWidget(card_button);
 
-        pushButton_2 = new QPushButton(centralwidget);
-        pushButton_2->setObjectName("pushButton_2");
+        play_button = new QPushButton(centralwidget);
+        play_button->setObjectName("play_button");
 
-        verticalLayout->addWidget(pushButton_2);
+        verticalLayout->addWidget(play_button);
 
 
         horizontalLayout->addLayout(verticalLayout);
@@ -107,8 +107,8 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Black Jack", nullptr));
         bet->setText(QCoreApplication::translate("MainWindow", "\320\241\321\202\320\260\320\262\320\272\320\260: ", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "\320\222\320\267\321\217\321\202\321\214 \320\272\320\260\321\200\321\202\321\203", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "\320\230\320\263\321\200\320\260\321\202\321\214", nullptr));
+        card_button->setText(QCoreApplication::translate("MainWindow", "\320\222\320\267\321\217\321\202\321\214 \320\272\320\260\321\200\321\202\321\203", nullptr));
+        play_button->setText(QCoreApplication::translate("MainWindow", "\320\230\320\263\321\200\320\260\321\202\321\214", nullptr));
     } // retranslateUi
 
 };
