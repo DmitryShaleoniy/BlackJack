@@ -162,8 +162,7 @@ void MainWindow::on_play_button_clicked() //тут откроем карту д�
         QMessageBox::information(this, "Ничья", "Ничья");
     }
     else{
-        QMessageBox::warning(this, "Поражение", "Вы проиграли"
-                                                "");
+        QMessageBox::warning(this, "Поражение", "Вы проиграли");
     }
     game();
 }
